@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header_admin {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_admin_left {
+    flex: 1;
+    height: 200px;
+    background: red;
+}
+
+.header_admin_right {
+    flex: 8;
+    height: 200px;
+    background: blue;
+}

@@ -1,0 +1,267 @@
+.carts {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart {
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+
+.cart img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.cart>div:first-child {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+.cart table {
+    margin: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.cart table tr,
+td,
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.cart input {
+    width: 50px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid rgb(233, 224, 224);
+}
+
+.cart tr:not(:last-child) td:nth-child(5) button {
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.cart tr td:last-child {
+    cursor: pointer;
+    color: red;
+}
+
+.cart table th:nth-child(1) {
+    width: 5%;
+}
+
+.cart table th:nth-child(2) {
+    width: 30%;
+}
+
+.cart table th:nth-child(3) {
+    width: 10%;
+    text-align: center;
+}
+
+.cart table th:nth-child(4) {
+    width: 10%;
+}
+
+.cart table th:nth-child(5) {
+    width: 10%;
+}
+
+.cart table th:nth-child(6) {
+    width: 10%;
+}
+
+.cart table th:nth-child(7) {
+    width: 10%;
+}
+
+.cart table th {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #ccc;
+    border: solid 1px #ddd;
+}
+
+.cart_free {
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.cart_free i {
+    font-size: 20px;
+    color: rgb(7, 204, 7);
+    padding-right: 10px;
+}
+
+.cart_dathang {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.cart_dathang button {
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* css cart thanh toán */
+
+.cart_thanhtoans {
+    margin: 20px 0;
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    display: none;
+}
+
+.thongtinkhachhang {
+    width: 48%;
+}
+
+.thongtinkhachhang_titlte {
+    background: #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+.thongtinkhachhang label {
+    width: 120px;
+    display: block;
+}
+
+.thongtinkhachhang div:not(:first-child) {
+    margin-top: 10px;
+}
+
+.thongtinkhachhang input {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.click_Dathang {
+    border: none;
+    background: #ccc;
+    padding: 5px 10px;
+    cursor: pointer
+}
+
+.click_Dathang:hover {
+    background: rgba(100, 100, 100, 0.5);
+    color: blue;
+}
+
+.thongtindonhang {
+    width: 48%;
+    border: 1px solid rgb(241, 40, 40);
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px 2px rgba(100, 100, 100, 0.3);
+    padding: 0 10px 10px 10px;
+}
+
+.thongtindonhang_titlte {
+    background: #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+.thongtindonhang_noidung img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.thongtindonhang_noidung table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+}
+
+.thongtindonhang_noidung table th,
+td {
+    border: none;
+}
+
+.thongtindonhang_noidung table tr {
+    box-shadow: 0px 0px 3px 0px rgba(100, 100, 100, 0.5);
+}
+
+.thongtindonhang_noidung table td:nth-child(1),
+th:nth-child(1) {
+    padding-left: 10px;
+    width: 50%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.thongtindonhang_noidung table td:nth-child(2),
+th:nth-child(2) {
+    width: 20%;
+    text-align: center;
+}
+
+.thongtindonhang_noidung table td:nth-child(3),
+th:nth-child(3) {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.thue_gia,
+.phigiaohang_gia,
+.tong_gia,
+.tong_thanhtoan {
+    text-align: right !important;
+    padding-right: 10px;
+}
+
+.cangiua {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .cart table th:nth-child(4) {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .table_gh {
+        width: 98%;
+        margin: 0 auto;
+        overflow-y: scroll;
+    }
+    .cart table th:nth-child(4) {
+        width: 100px;
+    }
+    .cart table {
+        width: 800px;
+        margin: 10px 0px;
+    }
+    .cart_user {
+        width: 95%;
+        margin: 0 auto;
+        padding: 11px;
+    }
+    .cart_user div {
+        flex-direction: column !important;
+    }
+    .thongtinkhachhang,
+    .thongtindonhang {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,18 @@
+1 - bang san pham
+2 - bang loai san pham
+3 - bang danh muc
+4 - bang danh gia
+5 - bang bai viet
+6 - bang khuyen mai
+7 - bang thue
+8 - bang giao hang
+9 - bang nha cung cap 
+10 - bang hinh anh san pham
+11 - bang khach hang 
+12 - bang hoa don nhap
+13 - bang chi tiet hoa don  nhap
+14 - bang hoa don ban 
+15 - bang chi tiet hoa don ban
+16 - bang tai khoan admin
+17 - bang nhan vien
+18 - bang tim kiem

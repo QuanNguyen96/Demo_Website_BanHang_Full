@@ -1,0 +1,398 @@
+:root {
+    --card_search-margin-left: 10px;
+    --card_search-margin-top: 10px;
+    --card_search-colum: 4;
+}
+
+
+/* css search */
+
+.searchs {
+    max-width: var(--body-width);
+    margin: 20px auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchs>p {
+    padding: 10px 20px;
+    font-size: 24px;
+    color: blue;
+    text-transform: capitalize;
+    text-decoration: underline
+}
+
+.search_cards {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.search_card {
+    box-shadow: 1px 1px 1px 1px rgb(153 141 141 / 20%);
+    width: calc(100% / var(--card_search-colum) - var(--card_search-margin-left) * 2);
+    margin: var(--card_search-margin-top) var(--card_search-margin-left);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.search_card:hover {
+    border: solid 1px red;
+}
+
+.search_card_img {
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.search_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search_card_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search_card_ten {
+    cursor: pointer;
+    padding: 5px 5px 0 5px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*bỏ đi cũng dk vẫn hiển thị dấu ....*/
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.search_card_real {
+    color: red;
+    text-decoration: line-through;
+}
+
+.search_card_show {
+    color: red;
+}
+
+.search_card_gia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.search_card_review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px 5px 5px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.search_card_danhgia {
+    display: flex;
+    flex-direction: row;
+}
+
+.search_card_danhgia i {
+    font-size: 14px;
+    color: rgb(255, 115, 0);
+    padding: 0;
+}
+
+.search_card_daban {
+    margin-left: 20px;
+    opacity: .5;
+}
+
+.search_card_dathang {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.search_card_dathang a {
+    color: black;
+}
+
+.search_card_content_bao {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.search_card_sale {
+    text-align: center;
+    color: red;
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    background-color: rgb(248, 235, 59);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search_card_sale::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-top: 5px solid rgb(248, 235, 59);
+    top: 100%;
+    right: 0;
+}
+
+.search_card_sale::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-top: 5px solid rgb(248, 235, 59);
+    top: 100%;
+    left: 0;
+}
+
+.search_card_like {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: red;
+    color: white;
+    padding: 2px;
+    font-size: 14px;
+}
+
+.search_cards_view_add {
+    text-align: center;
+}
+
+.search_cards_view_add button {
+    padding: 10px;
+    background-color: rgb(230, 113, 113);
+    border: none;
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.searchs_thongbao {
+    display: flex;
+    flex-direction: row;
+}
+
+.searchs_left {
+    flex: 3;
+}
+
+.searchs_right {
+    flex: 10;
+}
+
+.searchs_thongbao {
+    margin-top: 10px;
+}
+
+.searchs_thongbao i {
+    font-size: 18px;
+    color: rgb(156 159 175);
+}
+
+
+/* css searrch left --- bộ lọc --filter */
+
+.searchs_left_filter {
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    background: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 3px 0;
+    font-size: 18px;
+}
+
+.searchs_left_content_danhmuc,
+.searchs_left_content_gia,
+.searchs_left_content_khuyenmai {
+    padding: 5px 10px;
+    line-height: 25px;
+    border-bottom: 1px solid rgb(207, 205, 205);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.row input:checked {
+    color: red;
+    background: blue;
+}
+
+.row p {
+    margin-left: 5px;
+}
+
+.searchs_left_content_danhmuc_them {
+    margin-left: 25px;
+}
+
+.searchs_left_content_gia select {
+    color: red;
+    margin-left: 10px;
+}
+
+.searchs_left_content_danhmuc>p {
+    color: blue;
+    font-size: 20px;
+}
+
+.searchs_left_content_gia>p {
+    color: blue;
+    font-size: 20px;
+}
+
+.searchs_left_content_gia_locgia {
+    margin-left: 10px;
+}
+
+.searchs_left_content_gia_locgia span {
+    width: 28px;
+    display: block;
+}
+
+.searchs_left_content_khuyenmai>p {
+    color: blue;
+    font-size: 20px;
+}
+
+.searchs_left_content_khuyenmai_them {
+    margin-left: 25px;
+}
+
+
+/*  */
+
+.phantrangs {
+    max-width: var(--body-width);
+    margin: 20px auto;
+}
+
+.phantrang {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: flex-end;
+}
+
+.phantrang .page {
+    background-color: gray;
+    padding: 3px 8px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.phantrang .page:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* 
+ */
+
+.phantranglocs {
+    max-width: var(--body-width);
+    margin: 20px auto;
+}
+
+.phantrangloc {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: flex-end;
+}
+
+.phantrangloc .page {
+    background-color: gray;
+    padding: 3px 8px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.phantrangloc .page:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+     :root {
+        --card_search-margin-left: 10px;
+        --card_search-margin-top: 10px;
+        --card_search-colum: 3;
+    }
+}
+
+@media screen and (max-width: 414px) {
+     :root {
+        --card_search-margin-left: 3px;
+        --card_search-margin-top: 10px;
+        --card_search-colum: 1;
+    }
+    .searchs_left {
+        flex: 1;
+        width: 120px;
+    }
+    .searchs_left_filter {
+        font-size: 10px;
+    }
+    .searchs_left_content_danhmuc>p {
+        font-size: 16px;
+    }
+    .row {
+        padding-left: 0px;
+    }
+    .row p,
+    input {
+        font-size: 12px;
+    }
+    .search_select_gia {
+        width: 90px;
+    }
+    .searchs_left_content_gia select {
+        margin-left: 2px;
+    }
+    .searchs_left_content_gia>p {
+        font-size: 16px;
+    }
+    .row p,
+    input[type='text'] {
+        font-size: 12px;
+    }
+    .searchs_left_content_khuyenmai>p {
+        font-size: 14px;
+    }
+    #search_select_gia,
+    .searchs_left_content_gia_locgia input {
+        width: 90px;
+    }
+}
